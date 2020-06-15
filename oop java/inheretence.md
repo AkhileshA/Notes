@@ -17,15 +17,15 @@ class SubClass extends SuperClass{
 }
 ```
 
-You can only specify one superclass for any subclass that you create. Java
-does not support the inheritance of multiple superclasses into a single subclass.
+You can `only` specify one superclass for any subclass that you create. Java
+`does not` support the inheritance of multiple superclasses into a single subclass.
 
 ## Member Access and Inheritance
 
 Although a subclass includes all of the members of its superclass, it cannot
 access those members of the superclass that have been declared as private.
 
-- ## A Superclass Variable Can Reference a Subclass Object
+## A Superclass Variable Can Reference a Subclass Object
 
 It is important to understand that it is the type of the reference variable—not
 the type of the object that it refers to—that determines what members can be
@@ -44,8 +44,10 @@ following form of super:
 super(arg-list);
 ```
 
-Here, arg-list specifies any arguments needed by the constructor in the
-superclass. `super( )` must always be the first statement executed inside a
+- Here, arg-list specifies any arguments needed by the constructor in the
+superclass. 
+
+- `super( )` must always be the first statement executed inside a
 subclass’ constructor.
 
 When a subclass calls super( ), it is calling the constructor of its immediate superclass. Thus, super( )
@@ -82,8 +84,7 @@ will be hidden.
 
 ### Dynamic Method Dispatch
 
-Method overriding forms the basis for one of Java’s most powerful
-concepts: dynamic method dispatch. Dynamic method dispatch is the
+Dynamic method dispatch is the
 mechanism by which a call to an overridden method is resolved at run time,
 rather than compile time. Dynamic method dispatch is important because this
 is how Java implements run-time polymorphism.
@@ -95,7 +96,9 @@ called through a superclass reference, Java determines which version of that
 method to execute based upon the type of the object being referred to at the
 time the call occurs. Thus, this determination is made at run time. When
 different types of objects are referred to, different versions of an overridden
-method will be called. **In other words, it is the type of the object being referred to (not the type of the reference variable) that determines which version of an overridden method will be executed.** 
+method will be called. 
+
+`In other words, it is the type of the object being referred to (not the type of the reference variable) that determines which version of an overridden method will be executed.`
 Therefore, if a superclass contains a
 method that is overridden by a subclass, then when different types of objects
 are referred to through a superclass reference variable, different versions of the
@@ -161,9 +164,10 @@ means that a reference variable of type Object can refer to an object of any
 other class. Also, since arrays are implemented as classes, a variable of type
 Object can also refer to any array.
 
+![object class](./../pics/object_class.PNG)
+
 The methods getClass( ), notify( ), notifyAll( ), and wait( ) are declared as
 final. You may override the others. These methods are described elsewhere in
 this book. However, notice two methods now: equals( ) and toString( ). The
 equals( ) method compares two objects. It returns true if the objects are equal,
-and false otherwise. The
-
+and false otherwise.
