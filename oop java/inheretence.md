@@ -164,7 +164,7 @@ means that a reference variable of type Object can refer to an object of any
 other class. Also, since arrays are implemented as classes, a variable of type
 Object can also refer to any array.
 
-![object class](./../pics/object_class.PNG)
+![object class](./../images/object_class.PNG)
 
 The methods getClass( ), notify( ), notifyAll( ), and wait( ) are declared as
 final. You may override the others. These methods are described elsewhere in

@@ -24,8 +24,7 @@ typically used to report some error condition to the caller of a method.
 Java exception handling is managed via five keywords: `try`, `catch`, `throw`,
 `throws`, and `finally`.
 
-Java exception handling is managed via five keywords: try, catch, throw,
-throws, and finally. Briefly, here is how they work. Program statements that
+Program statements that
 you want to monitor for exceptions are contained within a try block. If an
 exception occurs within the try block, it is thrown. Your code can catch this
 exception (using catch) and handle it in some rational manner. Systemgenerated
@@ -208,3 +207,4 @@ exception. If there is no underlying exception, null is returned. The initCause(
 ) method associates causeExc with the invoking exception and returns a
 reference to the exception.
 
+ 

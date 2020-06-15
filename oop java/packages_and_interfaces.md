@@ -60,10 +60,9 @@ directory in which the classes are stored.
 ### Finding Packages and CLASSPATH
 
 - By default, the Java run-time system uses the
-current working directory as its starting point. Thus, if your package is in a
-subdirectory of the current directory, it will be found.
-- You can specify a directory path or paths by setting the CLASSPATH environmental variable.
-- You can use the -classpath option with java and javac to specify the.
+current working directory as its starting point. Thus, `if your package is in a subdirectory of the current directory, it will be found.`
+- You can specify a directory path or paths by setting the `CLASSPATH` environmental variable.
+- You can use the `-classpath` option with java and javac to specify the.
 
 As explained, AccountBalance is now part of the package mypack. This
 means that it cannot be executed by itself. That is, you cannot use this
