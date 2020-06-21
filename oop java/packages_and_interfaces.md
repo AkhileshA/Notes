@@ -161,6 +161,8 @@ An interface default method is defined similar to the way a method is defined
 by a class. The primary difference is that the declaration is preceded by the
 keyword default.
 
+>To define a default method, precede its declaration with default.
+
 ### Use static Methods in an Interface
 
 Like static methods in a class, a static method defined by
