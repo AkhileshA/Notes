@@ -57,6 +57,7 @@ dynamically allocated .***
 Box mybox; // declare reference to object
 mybox = new Box(); // allocate a Box object 
 ```
+
 After the second line executes,
 you can use mybox as if it were a Box object. But in reality, mybox simply
 holds, in essence, the memory address of the actual Box object.
