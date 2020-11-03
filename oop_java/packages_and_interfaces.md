@@ -1,3 +1,16 @@
+- [Packages and Interfaces](#packages-and-interfaces)
+  - [Packages](#packages)
+    - [Defining a Package](#defining-a-package)
+    - [Finding Packages and CLASSPATH](#finding-packages-and-classpath)
+    - [Importing packages](#importing-packages)
+  - [Interfaces](#interfaces)
+    - [Implementing Interfaces](#implementing-interfaces)
+    - [Accessing Implementations Through Interface References](#accessing-implementations-through-interface-references)
+    - [Default Interface Methods](#default-interface-methods)
+    - [Use static Methods in an Interface](#use-static-methods-in-an-interface)
+    - [Private Interface Methods](#private-interface-methods)
+  - [Rules for dealing Multiple Inheritance Issues](#rules-for-dealing-multiple-inheritance-issues)
+
 # Packages and Interfaces
 
 Packages are containers for classes. They are used to keep the class

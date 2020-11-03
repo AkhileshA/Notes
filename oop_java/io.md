@@ -1,3 +1,15 @@
+- [I/O, Try-with-Resources](#io-try-with-resources)
+  - [Streams](#streams)
+  - [The Byte Stream Classes](#the-byte-stream-classes)
+  - [The Character Stream Classes](#the-character-stream-classes)
+  - [The Predefined Streams](#the-predefined-streams)
+    - [Reading Console Input](#reading-console-input)
+    - [Reading Character](#reading-character)
+    - [Reading Strings](#reading-strings)
+    - [Writing Console Output](#writing-console-output)
+  - [The PrintWriter Class](#the-printwriter-class)
+  - [Reading and Writing Files](#reading-and-writing-files)
+
 # I/O, Try-with-Resources
 
 ## Streams

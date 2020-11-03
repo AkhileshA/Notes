@@ -1,3 +1,17 @@
+- [Exception Handling](#exception-handling)
+  - [Exception-Handling Fundamentals](#exception-handling-fundamentals)
+    - [General form](#general-form)
+  - [Exception Types](#exception-types)
+  - [Uncaught Exceptions](#uncaught-exceptions)
+  - [Using try and catch](#using-try-and-catch)
+  - [Using Throw](#using-throw)
+    - [Example](#example)
+  - [Using throws](#using-throws)
+  - [Using finally](#using-finally)
+  - [Java’s Built-in Exceptions](#javas-built-in-exceptions)
+  - [Creating Your Own Exception Subclasses](#creating-your-own-exception-subclasses)
+  - [Chained Exceptions](#chained-exceptions)
+
 # Exception Handling
 
 An exception is

@@ -1,3 +1,13 @@
+- [Introduction](#introduction)
+  - [Enumerations](#enumerations)
+    - [Java Enumerations Are Class Types](#java-enumerations-are-class-types)
+  - [Type Wrappers](#type-wrappers)
+    - [Character](#character)
+    - [Boolean](#boolean)
+    - [The Numeric Type Wrappers](#the-numeric-type-wrappers)
+  - [Annotations](#annotations)
+    - [Annotation Basics](#annotation-basics)
+
 # Introduction
 
 ## Enumerations

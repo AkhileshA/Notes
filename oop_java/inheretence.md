@@ -1,3 +1,19 @@
+- [Inheritance](#inheritance)
+  - [Inheritance Basics](#inheritance-basics)
+  - [Member Access and Inheritance](#member-access-and-inheritance)
+  - [A Superclass Variable Can Reference a Subclass Object](#a-superclass-variable-can-reference-a-subclass-object)
+  - [Using super](#using-super)
+    - [Using super to Call Superclass Constructors](#using-super-to-call-superclass-constructors)
+    - [A Second Use for super](#a-second-use-for-super)
+  - [When Constructors Are Executed](#when-constructors-are-executed)
+  - [Method Overriding](#method-overriding)
+    - [Dynamic Method Dispatch](#dynamic-method-dispatch)
+  - [Using Abstract Classes](#using-abstract-classes)
+  - [Using final with Inheritance](#using-final-with-inheritance)
+    - [Using final to Prevent Overriding](#using-final-to-prevent-overriding)
+    - [Using final to Prevent Inheritance](#using-final-to-prevent-inheritance)
+  - [The Object class](#the-object-class)
+
 # Inheritance
 
 Inheritance is one of the cornerstones of object-oriented programming because

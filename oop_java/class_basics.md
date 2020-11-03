@@ -1,3 +1,21 @@
+- [Introduction](#introduction)
+  - [Declaring Objects](#declaring-objects)
+  - [A Closer Look at new](#a-closer-look-at-new)
+  - [Assigning Object Reference Variables](#assigning-object-reference-variables)
+  - [Methods](#methods)
+  - [Constructors](#constructors)
+    - [The `this` Keyword](#the-this-keyword)
+  - [A Closer look at methods and classes](#a-closer-look-at-methods-and-classes)
+    - [Overloading methods](#overloading-methods)
+  - [Using Objects as Parameters](#using-objects-as-parameters)
+    - [Recursion](#recursion)
+  - [Introducing Access Control](#introducing-access-control)
+  - [Understanding static](#understanding-static)
+  - [Introducing final](#introducing-final)
+  - [Introducing Nested and Inner Classes](#introducing-nested-and-inner-classes)
+  - [String](#string)
+  - [Varargs: Variable-Length Arguments](#varargs-variable-length-arguments)
+
 # Introduction
 
 The class is at the core of Java. It is the logical construct upon which the entire
