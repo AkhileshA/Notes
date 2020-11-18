@@ -81,14 +81,14 @@ An exchange in Camel is the message’s container during routing. An exchange al
 - `InOnly` — A one-way message (also known as an event message).
 - `InOut` —A request-response message. For example, HTTP-based transports are often request-reply.
 
-[](/images/camelExchange.PNG)
+[camel exchange](/images/camelExchange.PNG)
 
 - `Exchange ID`: A unique ID that identifies the exchange. Camel automatically generates the unique ID.
 - `MEP` : A pattern that denotes whether you’re using the InOnly or InOut messaging style. 
 
 ## Architecture
 
-[](/images/camelArchitecture.PNG)
+[routing architecture](/images/camelArchitecture.PNG)
 
 The routing engine uses routes as specifications indicating where messages are routed. Routes are defined using one of Camel’s DSLs. Processors are used to transform and manipulate messages during routing as well as to implement all the EIPs, which have corresponding names in the DSLs. Components are the extension points in Camel for adding connectivity to other systems. To expose these systems to the rest of Camel, components provide an endpoint interface.
 
