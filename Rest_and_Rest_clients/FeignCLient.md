@@ -6,6 +6,7 @@
   - [OpenFeign Integration with Spring Boot](#openfeign-integration-with-spring-boot)
     - [Dependancies for Spring  Boot](#dependancies-for-spring-boot)
   - [Steps to use Feign Client](#steps-to-use-feign-client)
+    - [Simple CLient COnfiguration](#simple-client-configuration)
   - [Overriding Defaults](#overriding-defaults)
     - [Configuration with a configuration class](#configuration-with-a-configuration-class)
       - [Example](#example)
@@ -24,7 +25,7 @@ Feign is a Java to HTTP client binder inspired by Retrofit, JAXRS-2.0, and WebSo
 
 To include Feign in your project use the starter with **group** `org.springframework.cloud` and *artifact id* `spring-cloud-starter-openfeign`. 
 
-Feign client is a easy way to consume web services. we declare a interface with the annotation `@FeignClient` and enable the clients wit the annotation @EnableFeignClient on the main application. Provide appropriate Jackson or any pther parsing annotations which is appropriate for your needs and specify in the feign builder when institiating the Client using the `builde()`. Refer [here](https://github.com/OpenFeign/feign) for documentation and specific http cliend or decoder or encoder regestration.
+Feign client is a easy way to consume web services. we declare a interface with the annotation `@FeignClient` and enable the clients with the annotation @EnableFeignClient on the main application. Provide appropriate Jackson or any pther parsing annotations which is appropriate for your needs and declare the client in the Controller or any part of your application where you want to make the calls to the client with the Spring `@Autowired` annotation. Spring will instantiate the client and now you can make the calls as per 
 
 - `HttpMessageConverters ` used for marshelling and Demarshilling of messages are same as Spring WEB.
 
@@ -53,6 +54,21 @@ Example Usage
   ```
 
   - Annotate the client interface defenition with `@FeignClient`
+
+
+### Simple CLient COnfiguration
+
+```java
+@FeignClient(name = "test", url = "http://localhost:8080")
+public interface Client {
+	@RequestMapping(method = RequestMethod.GET )
+	public Response req();
+	
+	@RequestMapping(method = RequestMethod.POST)
+	public Response post(@RequestBody Request req);
+}
+
+```
 
 ## Overriding Defaults
 
